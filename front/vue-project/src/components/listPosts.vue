@@ -1,6 +1,6 @@
 <template lang="">
-    <div>
-        <div v-for= "el in listPosts">
+    <div class="listPostsContainer">
+        <div class="" v-for= "el in listPosts">
             <div>{{el.name}}</div>
             
         <br/>
@@ -12,10 +12,15 @@
 <script>
 export default {
     props: ['listPosts'],
-   
     
+     
 }
 </script>
-<style lang="">
+<style>
+.listPostsContainer{
+    max-height: 100vh;
+    background-color: #ffffff;
+    overflow-y: scroll;
+}
     
 </style>

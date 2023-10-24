@@ -1,20 +1,22 @@
 <template lang="">
     <div class="container">
-        <button @click="showInput =  !showInput">Добавить пост</button>
-        <input type="text" v-if='showInput' @keyup.enter="$emit('addPost')">
+        <input 
+        @keyup.enter="$emit('newPost', $event)"
+        type="text"
+         v-if='showInput' >
+
+        <button @click='showInput = !showInput'>Добавить пост</button>
     </div>
 </template>
 <script>
 export default {
-     props:['addPost'],
+     props:['newPost'],
     data() {
         return {
             showInput: false
         }
     },
-    methods: {
-    
-    },
+
 }
 </script>
 <style>
