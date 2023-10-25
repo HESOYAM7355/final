@@ -3,30 +3,47 @@
         <input 
         @keyup.enter="$emit('newPost', $event)"
         type="text"
-         v-if='showInput' >
+        id="postInput"
+        placeholder="What do you think?">
 
-        <button @click='showInput = !showInput'>Добавить пост</button>
+        
     </div>
 </template>
 <script>
 export default {
      props:['newPost'],
-    data() {
-        return {
-            showInput: false
-        }
-    },
+  
 
 }
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
     .container{
+        min-height: 15vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        background-color: transparent;
     }
-    .container button{
-        max-width: 100px;
+    #postInput{
+        font-family: 'Old Standard TT', serif;
+
+        color: aliceblue;
+        border: none;
+        outline: none;
+        background-color: #1d1d1d;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 20px;
+        min-width: 40vw;
+        min-height: 4vw;
+        margin: auto;
+        overflow: auto;
+
+
+
     }
+
 </style>
