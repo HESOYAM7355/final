@@ -1,27 +1,6 @@
 
 <template>
-    <!-- <div class="about">
-      <form action="" @submit.prevent="checkUser">
-        <input type="text" placeholder="Имя">
-        <input type="password" placeholder="Пароль">
-        <button class="formButton">login</button>
-        <p> {{ message }}</p>
-        
-      </form>
-    </div> -->
-
-      <!-- <div class="about">
-    <h1>lets join to DARK</h1>
-    <form action="" @submit.prevent="addUser">
-      <input type="text" placeholder="Имя">
-      <input type="password" placeholder="Пароль">
-      <button class="formButton">Create</button>
-      <p> {{ message }}</p>
-    </form>
-
-    
-  </div> -->
-
+  
   <div class="login-box about">
   <h2>login</h2>
   <form action="" @submit.prevent="checkUser">
@@ -99,16 +78,7 @@
   </script>
   
   <style>
-  form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
 
-  
-  
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
@@ -124,8 +94,7 @@ body {
 
 .login-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  margin: auto;
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);

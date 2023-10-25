@@ -39,5 +39,10 @@ mounted(){
     overflow-y: scroll;
     overflow-x: hidden;
 }
-    
+.listPostsContainer div *{
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    padding: 15px;
+}
 </style>
+

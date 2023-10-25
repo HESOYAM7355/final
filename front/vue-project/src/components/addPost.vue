@@ -37,13 +37,8 @@ export default {
         font-size: 18px;
         padding: 10px 15px;
         border-radius: 20px;
-        min-width: 40vw;
-        min-height: 4vw;
-        margin: auto;
-        overflow: auto;
-
-
-
+        width: 40vw;
+        height: 4vw;
+        margin-top: 4vh;
     }
-
 </style>
